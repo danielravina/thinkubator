@@ -1,0 +1,23 @@
+{
+  "name": "thinkubator_api",
+  "version": "0.0.0",
+  "description": "",
+  "main": "application.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "coffee application.coffee"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apiserver": "^0.3.1",
+    "dropbox": "^0.10.3",
+    "express": "^4.8.7",
+    "nodeapi": "0.0.1",
+    "socket.io": "^1.0.6",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.2.1"
+  }
+}

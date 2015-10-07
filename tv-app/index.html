@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>thinkubator_tv</title>
+
+	<!-- TODO : Common API -->
+	<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Widget.js"></script>
+	<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/TVKeyValue.js"></script>
+
+	<!-- TODO : Javascript code -->
+	<script language="javascript" type="text/javascript" src="https://cdn.socket.io/socket.io-1.0.6.js"></script>
+	<script language="javascript" type="text/javascript" src="app/javascript/vendor/jquery.js"></script>
+	<script language="javascript" type="text/javascript" src="app/javascript/Main.js"></script>
+
+	<!-- TODO : Style sheets code -->
+	<link rel="stylesheet" href="app/stylesheets/vendor/normalize.css" type="text/css">
+	<link rel="stylesheet" href="app/stylesheets/vendor/foundation.min.css" type="text/css">
+	<link rel="stylesheet" href="app/stylesheets/Main.css" type="text/css">
+
+</head>
+
+<body onload="Main.onLoad();" onunload="Main.onUnload();">
+	<!-- Dummy anchor as focus for key events -->
+	<a href="javascript:void(0);" id="anchor" onkeydown="Main.keyDown();"></a>
+	<header>
+	<div class="row">
+		<div class="columns small-12">
+			<h1>Thinkubator <small> The one place to share your thoughts</small></h1>
+		</div>
+	</div>
+	</header>
+	<div class="row">
+		<div class="columns small-3">
+			<ul class="small-block-grid-2" id="thumbnails">
+			</ul>
+		</div>
+		<div class="columns small-9">
+			<img src="" alt="" id="main-img">
+		</div>
+	</div>
+</body>
+</html>
